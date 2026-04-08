@@ -58,7 +58,7 @@ function Modal({ produto, onClose, onSalvar }) {
     if (!form.validade) return setErro('Preencha a validade.');
     setErro(""); setLoading(true);
     try {
-      const url    = produto ? `${API}/produtos/${produto.id}` : `${API}/produtos`;
+      const url = produto ? `${API}/${produto.id}` : API;
       const method = produto ? "PUT" : "POST";
       const res    = await fetch(url, {
         method,
