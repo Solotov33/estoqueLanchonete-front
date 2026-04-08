@@ -173,10 +173,10 @@ export default function App() {
   const carregar = useCallback(async () => {
     setLoading(true); setErro("");
     try {
-      const url =
-        aba === "proximos" ? `${API}/produtos/validade/proximos?dias=${dias}` :
-        aba === "vencidos" ? `${API}/produtos/validade/vencidos` :
-        `${API}/produtos`;
+const url = 
+  aba === "proximos" ? `${API}/produtos/validade/proximos?dias=${dias}` :
+  aba === "vencidos" ? `${API}/produtos/validade/vencidos` :
+  `${API}/produtos`;
       const res  = await fetch(url);
       const data = await res.json();
       setProdutos(Array.isArray(data) ? data : data.produtos || []);
