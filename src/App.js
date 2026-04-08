@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const API = "http://localhost:3000";
+const API = "estoquelanchonete-production.up.railway.app";
 
 const TABS = [
   { id: "todos",    label: "Todos"          },
