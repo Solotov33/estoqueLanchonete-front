@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 
 const backend = import.meta.env.VITE_BACKEND;
 
-const API = "estoquelanchonete-production.up.railway.app";
+const API = `${backend}`;
 
 const TABS = [
   { id: "todos",    label: "Todos"          },
