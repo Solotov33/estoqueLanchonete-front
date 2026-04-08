@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
-const backend = import.meta.env.VITE_BACKEND;
-
+//const backend = import.meta.env.VITE_BACKEND;
+const backend = process.env.REACT_APP_BACKEND;
 const API = `${backend}`;
 
 const TABS = [
